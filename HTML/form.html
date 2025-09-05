@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color:white;
+        }
+        body{
+            background-color: aquamarine;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Registration Form</h1>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/mpwlegkz" method="post">
+            <!--use of text type-->
+            <div>
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="mothername">Mother's name</label>
+                <input type="text" name="m_name" id="m_name">
+            </div>
+             <br>
+            <div>
+                <label for="fathername">Father's Name</label>
+                <input type="text" name="f_name" id="f_name">
+            </div>
+             <br>
+             <!--use of email type-->
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+             <br>
+              <!--use of date type-->
+            <div>
+
+                <label for="dateofbirth">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+             <br>
+             <!--use of file type-->
+            <div>
+                <label for="uploadfile">Upload document</label>
+                <input type="file" name="file" id="file">
+            </div>
+             <br>
+             <!--use of password type-->
+             <div>
+                <label>password</label>
+                <input type="password" name="pass" id="pss">
+             </div>
+             <br>
+             <!--use of radio button-->
+             <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" id="gender">male
+                <input type="radio" name="gender" id="gender">female
+             </div>
+             <br>
+              <!--use of checkbox-->
+             <div>
+                <label>Choose your education level</label>
+                <input checked type="checkbox" name="cyel" id="un">Undergraduate 
+                <input type="checkbox" name="cyel" id="po">Post graduate
+             </div>
+             <br>
+             <!--use of selectt tag-->
+             <div>
+                <label for="chhoseDepartment">Choose your department</label>
+                <select name="Department">
+                    <option>CSE</option>
+                    <option>BBA</option>
+                    <option>English</option>
+                    <option>Pharmacy</option>
+                </select>
+             </div>
+             <!--Use of textarea-->
+             <div>
+                <label for="description">Description</label><br>
+                <textarea rows="10" cols="30">
+
+                </textarea>
+             </div>
+             <!--use of submit type-->
+             <div class="sub">
+                <input type="submit" name="submit" id="submit">
+             </div>
+              
+        </form>
+    </main>
+</body>
+</html>

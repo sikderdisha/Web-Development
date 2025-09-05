@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            border: 1px solid black;
+            
+        }
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .t1{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--header tag-->
+    <header>
+        <h1>HTML Table</h1>
+    </header>
+    <!--main tag-->
+    <main>
+        <table class="t1">
+        <caption>Student Info</caption>
+        <colgroup>
+        <col span="2" style="background-color: brown;">
+    
+    </colgroup>
+        <thead>
+            <tr>
+                 <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col" colspan="2">Telephone</th><!--use colspan-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">157</th>
+                <td>Disha</td>
+                <td>0176523666</td>
+                <td>022334455</td>
+            </tr>
+            <tr>
+                <th scope="row">158</th>
+                <td>Mim</td>
+                <td>09832877454</td>
+                <td>0988327455</td>
+            </tr>
+             <tr>
+                <th scope="row">159</th>
+                <td>Kaniz</td>
+                <td>09832877454</td>
+                <td>022376483</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </main>
+    
+</body>
+</html>

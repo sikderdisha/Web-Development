@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            border: 1px solid black;
+            
+        }
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .t1{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="t1">
+        <caption>Student Info</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th colspan="2">Telephone</th><!--use colspan-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Disha</td>
+                <td>159</td>
+                <td>0176523666</td>
+                <td>022334455</td>
+            </tr>
+            <tr>
+                <td>Mim</td>
+                <td>160</td>
+                <td>09832877454</td>
+                <td>0988327455</td>
+            </tr>
+             <tr>
+                <td>Kaniz</td>
+                <td>161</td>
+                <td>09832877454</td>
+                <td>022376483</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Customer Info</caption>
+        <thead>
+            <tr>
+                <th rowspan="4">Name</th><!--use rowspan-->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone No</th>
+            </tr>
+            <tr>
+                <td>Disha</td>
+                <td>Sikder</td>
+                <td rowspan="2">0176534372</td><!--use rowspan-->
+            </tr>
+            <tr>
+                <td>Antora</td>
+                <td>Sikder</td>
+            </tr>
+            <tr>
+                <td>Tahmina</td>
+                <td>Rahman</td>
+                <td>7663246522</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
