@@ -1,0 +1,51 @@
+
+         /*Universal selector */
+         *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+         }
+        /* element selector */
+        h1 {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+        }
+
+        /* id selector */
+        #p2 {
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+        }
+
+        /* id selector for h3 */
+        #p3 {
+            background-color: coral;
+            color: white;
+            padding: 5px;
+        }
+
+         /* class selector */
+         .p4 {
+            background-color: aqua;
+        
+        }
+ /*multiple class selector */
+        .p5{
+            background-color: blueviolet;
+        }
+        .center{
+            font-weight: bold;
+        }
+
+ /*Grouping selector */
+ h4,h5{
+background-color: brown;
+ }
+
+ /*Descendant Selector */
+ div p{
+    color: brown;
+ }
+
+  
