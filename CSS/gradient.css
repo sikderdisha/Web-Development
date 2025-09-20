@@ -1,0 +1,16 @@
+.gradient {
+  width: 100%;
+  height: 450px;
+  background-image: linear-gradient(to right, #7D27F5, #A927F5, #F527AD);
+}
+
+.redical {
+  width: 100%;
+  height: 450px;
+  background-image: radial-gradient(circle,#F52750, #7D27F5, #A927F5, #F527AD);
+}
+.conic-gradient{
+     width: 100%;
+  height: 450px;
+  background-image: conic-gradient(#F52750,#7D27F5, #A927F5, #F527AD,#31ED73);
+}
