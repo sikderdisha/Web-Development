@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/* */
+#nav_bar{
+    background-color: aqua;
+   width: 100%;
+   cursor: pointer;
+   margin: 0; /*placed the bar center*/
+   border-radius: 20px;/*round shape*/
+
+}
+
+#nav_bar ul{
+overflow: auto; /*Show the bg color*/
+}
+#nav_bar ul li{
+list-style: none; /*Remove the points from unorderlist */
+float: left; /*side by side*/
+margin: 10px; /*gaps between contents*/
+}   
+#nav_bar ul li a{
+text-decoration: none;
+color: blue;
+font-size: 20px;
+} 
+#nav_bar ul li a:hover{
+    color: blueviolet;
+    background-color: blanchedalmond;
+}
+#nav_bar ul li a:visited{
+    color:red;
+}
+
+#search{
+float: right;
+padding: 5px;
+border-radius: 10px;
+ background-color: aqua;
+}
+
+</style>
+</head>
+<body>
+    <div id="nav_bar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Service</a></li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">help</a>
+            </li>
+            <div id="search">
+<input type="text" id="search" name="search" placeholder="search website">
+    </div>
+        </ul>
+
+        
+    </div>
+    
+
+</body>
+</html>
