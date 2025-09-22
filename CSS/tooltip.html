@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .tooltip {
+            position: relative; 
+        }
+        .tooltip .tooltext{
+background-color: blue;
+color: white;
+position: absolute;
+top: 10px;
+visibility: hidden;
+
+        }
+        .tooltip:hover .tooltext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        Facebook
+        <span class="tooltext">A social media</span>
+    </div>
+</body>
+</html>
