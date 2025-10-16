@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: blue;
+            font-weight: bold;
+            text-align: center;
+          
+           
+        }
+        a{
+             color: white;
+              padding: 10px;
+              text-decoration: none;
+              cursor: pointer;
+        }
+        a:hover{
+            color: rgb(189, 226, 43);
+        }
+        .drop-container{
+            position: relative;
+            display: inline;
+        }
+        .drop-content {
+      position: absolute;
+     top: 100%;
+     left: 0px;
+    background-color: blue;
+      display: none;
+      text-align: left;
+      
+     
+    }
+        .drop-container:hover .drop-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Tutorial</a>
+<!--dropdown menu-->
+        <div class="drop-container">
+            <a href="#">Contact us</a>
+
+            <div class="drop-content">
+                 
+        <a href="#">Email</a>
+        <a href="#">Facebook</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
