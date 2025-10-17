@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             background-color: black;
+        }
+        .dora{
+               margin-top: 100px;
+               transition: 3s;
+        }
+        .dora:hover{
+            transform: scale(1.2);
+            border: 5px yellow;
+        }
+        img{
+           width: 300px;
+           height: 350px;
+           display: block;
+          margin: 0 auto;
+          border: 5px solid red;
+          /*animation-name: my_img;
+          animation-duration: 3s;*/
+}
+
+img:hover{
+    animation-name: my_img;
+          animation-duration: 3s;
+          animation-fill-mode: forwards;
+}
+
+/*add anumation */
+        @keyframes my_img {
+            /*
+            from{
+ width: 300px;
+ border: 5px solid red;
+
+            }
+            to{
+ width: 250px;
+  border: 5px solid gold;
+            }
+  */
+  0%{
+    width: 300px;
+ border: 5px solid red;
+  }
+  50%{
+    width: 300px;
+ border: 5px solid rgb(255, 0, 157);
+  }
+  100%{
+    width: 250px;
+  border: 5px solid gold;
+  }
+        }
+    </style>
+</head>
+<body>
+    <div class="dora">
+        <img src="https://www.shutterstock.com/image-vector/cartoon-background-transparent-doraemon-nobita-600nw-2364737497.jpg">
+    </div>
+</body>
+</html>
