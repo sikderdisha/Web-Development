@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.body{
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    margin: 5px;
+    
+}
+.list li{
+    color: white;
+    margin: 50px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-type: none;
+    position: relative;
+    
+}
+
+.container li::before{
+    content: '';
+    position: absolute;
+    width: 99%;
+    height: 10px;
+    background-color: aqua;
+    top: calc(99% + 5px);
+    border-radius: 30px;
+}
+
+.container li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0; /*animation start from the begining of the width*/
+    height: 10px;
+    background-color:blue;
+    top: calc(99% + 5px);
+    border-radius: 30px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.container .list li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 95%;
+        background-color: darkblue;
+    }
+}
+
+.container .list li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+        background-color:darkcyan;
+    }
+}
+
+.container .list li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 10%;
+        background-color: rgb(139, 69, 0);
+    }
+}
+
+.container .list li.py::after{
+    animation-name: py;
+}
+@keyframes py{
+    to{
+        width: 5%;
+        background-color: rgb(139, 0, 0);
+    }
+}
+
+.container .list li.data::after{
+    animation-name: data;
+}
+@keyframes data{
+    to{
+        width: 80%;
+        background-color: rgb(90, 139, 0);
+    }
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul class="list">
+    <li class="html">html</li>
+    <li class="css">css</li>
+    <li class="js">js</li>
+    <li class="py">python</li>
+    <li class="data">database</li>
+</ul>
+</div>
+</body>
+</html>
