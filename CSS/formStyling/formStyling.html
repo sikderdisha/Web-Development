@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=text]{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 5px;
+            margin: 15px 0;
+            /*border: none;
+            border-bottom: 3px solid black;*/
+            border-radius: 15px;
+        }
+
+        #search{
+            width: 200px;
+            background-image: url("search.png");
+            background-repeat: no-repeat;
+            background-position: 5px 5px; /*x,y*/
+            font-size: 1rem;
+            padding-left: 30px;
+            transition: width 1s ease-in-out;
+
+        }
+        #search:focus{
+            background-color: rgb(9, 239, 247);
+            font-weight: bold;
+            color: white;
+            width: 100%;
+        }
+       textarea{
+        resize: none;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 50%;
+        padding: 20px;
+       }
+
+       input[type="button"],[type="reset"]{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        cursor: pointer;
+       }
+
+    </style>
+</head>
+<body>
+    <form action="" autocomplete="off">
+        <input type="text" id="search" placeholder="Search">
+        <br>
+
+        <label for="fname">First name</label>
+        <input type="text" placeholder="enter your first name" id="fname" required>
+
+        <label for="lname">Last name</label>
+        <input type="text" placeholder="enter your last name" id="lname" required>
+
+        <label for="pass">Passwird</label>
+        <input type="password" id="pass" required><br>
+
+        <label for="summary">summary</label><br>
+        <textarea cols="30" rows="10" placeholder="write here"></textarea><br>
+
+        <input type="button" id="submit" value="submit">
+         <input type="reset" id="reset" value="reset">
+
+    </form>
+</body>
+</html>
